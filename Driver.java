@@ -9,10 +9,10 @@ package ojolrush;
  * @author salsa
  */
 
-public class Player extends OjolRush implements InterfaceDriver {
+public class Driver extends OjolRush implements InterfaceDriver {
    
     // overloaded constructor 
-    public Player() {
+    public Driver() {
         ratingDriver = 1;
         motorDriver = "Supra X";
     }
