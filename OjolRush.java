@@ -56,8 +56,8 @@ public abstract class OjolRush implements InterfaceDriver {
     @Override
     public void mulaiDriver() {
         System.out.println("\n- Driver OjolRush hanya bisa pulang setelah target uang, rating, dan reward tercapai.");
-        System.out.println("- Ambil order untuk menambah rating dan uang.");
-        System.out.println("- Jenis motor dan tipe order akan mempengaruhi jumlah rating, uang, dan reward.");
+        System.out.println("- Ambil order untuk menambah uang, rating, dan reward.");
+        System.out.println("- Jenis motor dan tipe order akan mempengaruhi jumlah uang, rating, dan reward.");
         System.out.println("- Men-cancel order akan mengurangi rating.");
         System.out.println("\nMulai Kerja");
 	System.out.println("1 Pulang");
