@@ -211,13 +211,7 @@ public abstract class OjolRush implements InterfaceDriver {
         }
     }
     
-    @Override
-    public void gameOver() {
-        System.out.println("\nDriver dengan rating 0 dipecat.");
-        System.out.println("--- GAME OVER ---");
-        System.exit(0);
-    }
-    
+ 
     @Override
     public void cek(){
         if (uangDriver >=10 || ratingDriver >=4 ){
@@ -247,17 +241,24 @@ public abstract class OjolRush implements InterfaceDriver {
                             System.out.println("---END---");
           }
     }
+	
+    @Override
+    public void gameOver() {
+        System.out.println("\nDriver dengan rating 0 dipecat.");
+        System.out.println("--- GAME OVER ---");
+        System.exit(0);
+    }
  }
 
 interface InterfaceDriver {
-    void mulaiDriver();
-    void upgradeMotor();
-    void ambilOrderan();
-    void kerjaDriver();
-    void order();
-    void cek();
-    void gameOver();
-    void selesai();
-    void setDriver();
-    void cekStatus();
+	void setDriver();
+    	void mulaiDriver();
+	void cekStatus();
+	void kerjaDriver();
+    	void upgradeMotor();
+    	void ambilOrderan();
+    	void order();
+   	void cek();
+    	void selesai();
+    	void gameOver();
 }
