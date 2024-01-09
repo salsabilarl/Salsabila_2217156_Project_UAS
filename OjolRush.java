@@ -24,7 +24,7 @@ public abstract class OjolRush implements InterfaceDriver {
         Scanner input = new Scanner(System.in);
         System.out.println("Selamat Datang Driver OjolRush!\n");
         try{
-            Driver driver = new Driver();
+            Player driver = new Player();
             driver.detail();
             driver.mulai();
         }finally{
